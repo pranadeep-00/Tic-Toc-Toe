@@ -4,11 +4,16 @@ function b1(){
     if (key == 1) {
 		document.getElementById("a1").value = "X";
 		document.getElementById("a1").disabled = true;
+		document.getElementById("a1").style.borderColor="Green";
+		document.getElementById("a1").style.color = "Green";
+
 		key = 0;
 	}
 	else {
 		document.getElementById("a1").value = "O";
 		document.getElementById("a1").disabled = true;
+		document.getElementById("a1").style.borderColor="Red";
+		document.getElementById("a1").style.color = "Red";
 		key = 1;
 	}
 }
@@ -16,11 +21,15 @@ function b2(){
     if (key == 1) {
 		document.getElementById("a2").value = "X";
 		document.getElementById("a2").disabled = true;
+		document.getElementById("a2").style.borderColor="Green";
+		document.getElementById("a2").style.color = "Green";
 		key = 0;
 	}
 	else {
 		document.getElementById("a2").value = "O";
 		document.getElementById("a2").disabled = true;
+		document.getElementById("a2").style.borderColor="Red";
+		document.getElementById("a2").style.color = "Red";
 		key = 1;
 	}
 }
@@ -28,11 +37,15 @@ function b3(){
     if (key == 1) {
 		document.getElementById("a3").value = "X";
 		document.getElementById("a3").disabled = true;
+		document.getElementById("a3").style.borderColor="Green";
+		document.getElementById("a3").style.color = "Green";
 		key = 0;
 	}
 	else {
 		document.getElementById("a3").value = "O";
 		document.getElementById("a3").disabled = true;
+		document.getElementById("a3").style.borderColor="Red";
+		document.getElementById("a3").style.color = "Red";
 		key = 1;
 	}
 }
@@ -40,11 +53,15 @@ function b4(){
     if (key == 1) {
 		document.getElementById("a4").value = "X";
 		document.getElementById("a4").disabled = true;
+		document.getElementById("a4").style.borderColor="Green";
+		document.getElementById("a4").style.color = "Green";
 		key = 0;
 	}
 	else {
 		document.getElementById("a4").value = "O";
 		document.getElementById("a4").disabled = true;
+		document.getElementById("a4").style.borderColor="Red";
+		document.getElementById("a4").style.color = "Red";
 		key = 1;
 	}
 }
@@ -52,11 +69,15 @@ function b5(){
     if (key == 1) {
 		document.getElementById("a5").value = "X";
 		document.getElementById("a5").disabled = true;
+		document.getElementById("a5").style.borderColor="Green";
+		document.getElementById("a5").style.color = "Green";
 		key = 0;
 	}
 	else {
 		document.getElementById("a5").value = "O";
 		document.getElementById("a5").disabled = true;
+		document.getElementById("a5").style.borderColor="Red";
+		document.getElementById("a5").style.color = "Red";
 		key = 1;
 	}
 }
@@ -64,11 +85,15 @@ function b6(){
     if (key == 1) {
 		document.getElementById("a6").value = "X";
 		document.getElementById("a6").disabled = true;
+		document.getElementById("a6").style.borderColor="Green";
+		document.getElementById("a6").style.color = "Green";
 		key = 0;
 	}
 	else {
 		document.getElementById("a6").value = "O";
 		document.getElementById("a6").disabled = true;
+		document.getElementById("a6").style.borderColor="Red";
+		document.getElementById("a6").style.color = "Red";
 		key = 1;
 	}
 }
@@ -76,11 +101,15 @@ function b7(){
     if (key == 1) {
 		document.getElementById("a7").value = "X";
 		document.getElementById("a7").disabled = true;
+		document.getElementById("a7").style.borderColor="Green";
+		document.getElementById("a7").style.color = "Green";
 		key = 0;
 	}
 	else {
 		document.getElementById("a7").value = "O";
 		document.getElementById("a7").disabled = true;
+		document.getElementById("a7").style.borderColor="Red";
+		document.getElementById("a7").style.color = "Red";
 		key = 1;
 	}
 }
@@ -88,11 +117,15 @@ function b8(){
     if (key == 1) {
 		document.getElementById("a8").value = "X";
 		document.getElementById("a8").disabled = true;
+		document.getElementById("a8").style.borderColor="Green";
+		document.getElementById("a8").style.color = "Green";
 		key = 0;
 	}
 	else {
 		document.getElementById("a8").value = "O";
 		document.getElementById("a8").disabled = true;
+		document.getElementById("a8").style.borderColor="Red";
+		document.getElementById("a8").style.color = "Red";
 		key = 1;
 	}
 }
@@ -100,11 +133,15 @@ function b9(){
     if (key == 1) {
 		document.getElementById("a9").value = "X";
 		document.getElementById("a9").disabled = true;
+		document.getElementById("a9").style.borderColor="Green";
+		document.getElementById("a9").style.color = "Green";
 		key = 0;
 	}
 	else {
 		document.getElementById("a9").value = "O";
 		document.getElementById("a9").disabled = true;
+		document.getElementById("a9").style.borderColor="Red";
+		document.getElementById("a9").style.color = "Red";
 		key = 1;
 	}
 }
@@ -121,50 +158,193 @@ function myFun(){
 
     if(b1==='X' && b2==='X' && b3==='X'){
         gameResult.textContent= "X Player Won";
+		document.getElementById("a4").disabled=true;
+		document.getElementById("a5").disabled=true;
+		document.getElementById("a6").disabled=true;
+		document.getElementById("a7").disabled=true;
+		document.getElementById("a8").disabled=true;
+		document.getElementById("a9").disabled=true;
+		player_1();
     }
     else if(b1==='X' && b4==='X' && b7==='X'){
         gameResult.textContent= "X Player Won";
+		document.getElementById("a2").disabled=true;
+		document.getElementById("a5").disabled=true;
+		document.getElementById("a6").disabled=true;
+		document.getElementById("a3").disabled=true;
+		document.getElementById("a8").disabled=true;
+		document.getElementById("a9").disabled=true;
+		player_1();
     }
     else if(b3==='X' && b6==='X' && b9==='X'){
         gameResult.textContent= "X Player Won";
+		document.getElementById("a4").disabled=true;
+		document.getElementById("a5").disabled=true;
+		document.getElementById("a1").disabled=true;
+		document.getElementById("a7").disabled=true;
+		document.getElementById("a8").disabled=true;
+		document.getElementById("a2").disabled=true;
+		player_1();
     }
     else if(b7==='X' && b8==='X' && b9==='X'){
         gameResult.textContent= "X Player Won";
+		document.getElementById("a4").disabled=true;
+		document.getElementById("a5").disabled=true;
+		document.getElementById("a6").disabled=true;
+		document.getElementById("a1").disabled=true;
+		document.getElementById("a2").disabled=true;
+		document.getElementById("a3").disabled=true;
+		player_1();
     }
     else if(b1==='X' && b5==='X' && b9==='X'){
         gameResult.textContent= "X Player Won";
+		document.getElementById("a4").disabled=true;
+		document.getElementById("a2").disabled=true;
+		document.getElementById("a6").disabled=true;
+		document.getElementById("a7").disabled=true;
+		document.getElementById("a8").disabled=true;
+		document.getElementById("a3").disabled=true;
+		player_1();
     }
     else if(b3==='X' && b5==='X' && b7==='X'){
         gameResult.textContent= "X Player Wins";
+		document.getElementById("a4").disabled=true;
+		document.getElementById("a1").disabled=true;
+		document.getElementById("a6").disabled=true;
+		document.getElementById("a2").disabled=true;
+		document.getElementById("a8").disabled=true;
+		document.getElementById("a9").disabled=true;
+		player_1();
     }
     else if(b2==='X' && b5==='X' && b8==='X'){
         gameResult.textContent= "X Player Won";
+		document.getElementById("a4").disabled=true;
+		document.getElementById("a1").disabled=true;
+		document.getElementById("a6").disabled=true;
+		document.getElementById("a7").disabled=true;
+		document.getElementById("a3").disabled=true;
+		document.getElementById("a9").disabled=true;
+		player_1();
     }
     else if(b4==='X' && b5==='X' && b6==='X'){
         gameResult.textContent= "X Player Won";
+		document.getElementById("a1").disabled=true;
+		document.getElementById("a2").disabled=true;
+		document.getElementById("a3").disabled=true;
+		document.getElementById("a7").disabled=true;
+		document.getElementById("a8").disabled=true;
+		document.getElementById("a9").disabled=true;
+		player_1();
     }
     else if(b1==='O' && b2==='O' && b3==='O'){
         gameResult.textContent= "O Player Won";
+		document.getElementById("a4").disabled=true;
+		document.getElementById("a5").disabled=true;
+		document.getElementById("a6").disabled=true;
+		document.getElementById("a7").disabled=true;
+		document.getElementById("a8").disabled=true;
+		document.getElementById("a9").disabled=true;
+		player_2();
     }
     else if(b1==='O' && b4==='O' && b7==='O'){
         gameResult.textContent= "O Player Won";
+		document.getElementById("a2").disabled=true;
+		document.getElementById("a5").disabled=true;
+		document.getElementById("a6").disabled=true;
+		document.getElementById("a3").disabled=true;
+		document.getElementById("a8").disabled=true;
+		document.getElementById("a9").disabled=true;
+		player_2();
     }
     else if(b7==='O' && b8==='O' && b9==='O'){
         gameResult.textContent= "O Player Won";
+		document.getElementById("a4").disabled=true;
+		document.getElementById("a5").disabled=true;
+		document.getElementById("a6").disabled=true;
+		document.getElementById("a1").disabled=true;
+		document.getElementById("a2").disabled=true;
+		document.getElementById("a3").disabled=true;
+		player_2();
     }
     else if(b3==='O' && b6==='O' && b9==='O'){
         gameResult.textContent= "O Player Won";
+		document.getElementById("a4").disabled=true;
+		document.getElementById("a5").disabled=true;
+		document.getElementById("a1").disabled=true;
+		document.getElementById("a7").disabled=true;
+		document.getElementById("a8").disabled=true;
+		document.getElementById("a2").disabled=true;
+		player_2();
     }
     else if(b1==='O' && b5==='O' && b9==='O'){
         gameResult.textContent= "O Player Won";
+		document.getElementById("a4").disabled=true;
+		document.getElementById("a2").disabled=true;
+		document.getElementById("a6").disabled=true;
+		document.getElementById("a7").disabled=true;
+		document.getElementById("a8").disabled=true;
+		document.getElementById("a3").disabled=true;
+		player_2();
     }
-    else if(b3==='O' && b7==='O' && b7==='O'){
+    else if(b3==='O' && b5==='O' && b7==='O'){
         gameResult.textContent= "O Player Wins";
+		document.getElementById("a4").disabled=true;
+		document.getElementById("a2").disabled=true;
+		document.getElementById("a6").disabled=true;
+		document.getElementById("a1").disabled=true;
+		document.getElementById("a8").disabled=true;
+		document.getElementById("a9").disabled=true;
+		player_2();
     }
     else if(b2==='O' && b5==='O' && b8==='O'){
         gameResult.textContent= "O Player Won";
+		document.getElementById("a4").disabled=true;
+		document.getElementById("a1").disabled=true;
+		document.getElementById("a6").disabled=true;
+		document.getElementById("a7").disabled=true;
+		document.getElementById("a3").disabled=true;
+		document.getElementById("a9").disabled=true;
+		player_2();
     }
     else if(b4==='O' && b5==='O' && b6==='O'){
         gameResult.textContent= "O Player Won";
+		document.getElementById("a1").disabled=true;
+		document.getElementById("a2").disabled=true;
+		document.getElementById("a3").disabled=true;
+		document.getElementById("a7").disabled=true;
+		document.getElementById("a8").disabled=true;
+		document.getElementById("a9").disabled=true;
+		player_2();
     }
+	else{
+		gameResult.textContent= "Match Tie";
+	}
+}
+let a= document.getElementById("Player-1");
+let b= document.getElementById("Player-2");
+function player_1(){
+	let previousCounterValue = a.textContent;
+    let updatedCounterValue = parseInt(previousCounterValue) + 1;
+    a.textContent = updatedCounterValue;
+}
+function player_2(){
+	let previousCounterValue = b.textContent;
+    let updatedCounterValue = parseInt(previousCounterValue) + 1;
+    b.textContent = updatedCounterValue;
+}
+
+function Reset() {
+	location.reload();
+	document.getElementById('b1').value = '';
+	document.getElementById("b2").value = '';
+	document.getElementById("b3").value = '';
+	document.getElementById("b4").value = '';
+	document.getElementById("b5").value = '';
+	document.getElementById("b6").value = '';
+	document.getElementById("b7").value = '';
+	document.getElementById("b8").value = '';
+	document.getElementById("b9").value = '';
+
+
+
 }

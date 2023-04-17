@@ -1,13 +1,28 @@
 .box{
-    height: 30px;
-    width: 30px;
+    height: 80px;
+    width: 80px;
+    font-size: xx-large;
+    text-align: center;
 }
 h1{
     text-align: center;
+    padding-bottom: 25px;
+    padding-top: 10px;    
 }
 .block{
     text-align: center;
 }
 p{
+    text-align: center;
+}
+.score-card{
+    margin: 15px;
+}
+.button{
+    background-color: skyblue;
+    height: 30px;
+    width: 70px;
+}
+.bot{
     text-align: center;
 }
