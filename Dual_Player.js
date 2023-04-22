@@ -316,10 +316,11 @@ function myFun(){
 		document.getElementById("a9").disabled=true;
 		player_2();
     }
-	else{
-		gameResult.textContent= "Match Tie";
+	else if ((b1==='X'|| b1==='O') && (b2==='X'|| b2==='O') && (b3==='X'|| b3==='O') && (b4==='X'|| b4==='O') && (b5==='X'|| b5==='O') && (b6==='X'|| b6==='O') && (b7==='X'|| b7==='O') && (b8==='X'|| b8==='O') && (b9==='X'|| b9==='O' )){
+		gameResult.textContent="Match tie";
 	}
 }
+
 let a= document.getElementById("Player-1");
 let b= document.getElementById("Player-2");
 function player_1(){
