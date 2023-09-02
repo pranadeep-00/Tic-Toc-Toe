@@ -1,8 +1,12 @@
 .box{
     height: 80px;
     width: 80px;
-    font-size: xx-large;
+    font-size: 40px;
     text-align: center;
+    border-radius: 15px;
+    border-width: 5px;
+    margin-bottom: 5px;
+    border-color: black;
 }
 h1{
     text-align: center;
@@ -25,4 +29,22 @@ p{
 }
 .bot{
     text-align: center;
+}
+.p1{
+    color: green;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.p2{
+    color: red;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.score{
+    font-size: 25px;
+}
+.results{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 20px;
 }
