@@ -1,9 +1,9 @@
 let gameResult =document.getElementById("result");
 key = 1;
-function b1(){
+const k1= function b1(){
     if (key == 1) {
 		document.getElementById("a1").value = "X";
-		document.getElementById("a1").disabled = true;
+		document.getElementById("a1").disabled=true;
 		document.getElementById("a1").style.borderColor="Green";
 		document.getElementById("a1").style.color = "Green";
 
@@ -17,7 +17,7 @@ function b1(){
 		key = 1;
 	}
 }
-function b2(){
+const k2 =function b2(){
     if (key == 1) {
 		document.getElementById("a2").value = "X";
 		document.getElementById("a2").disabled = true;
@@ -33,7 +33,7 @@ function b2(){
 		key = 1;
 	}
 }
-function b3(){
+const k3=function b3(){
     if (key == 1) {
 		document.getElementById("a3").value = "X";
 		document.getElementById("a3").disabled = true;
@@ -49,7 +49,7 @@ function b3(){
 		key = 1;
 	}
 }
-function b4(){
+const k4=function b4(){
     if (key == 1) {
 		document.getElementById("a4").value = "X";
 		document.getElementById("a4").disabled = true;
@@ -65,7 +65,7 @@ function b4(){
 		key = 1;
 	}
 }
-function b5(){
+const k5=function b5(){
     if (key == 1) {
 		document.getElementById("a5").value = "X";
 		document.getElementById("a5").disabled = true;
@@ -81,7 +81,7 @@ function b5(){
 		key = 1;
 	}
 }
-function b6(){
+const k6=function b6(){
     if (key == 1) {
 		document.getElementById("a6").value = "X";
 		document.getElementById("a6").disabled = true;
@@ -97,7 +97,7 @@ function b6(){
 		key = 1;
 	}
 }
-function b7(){
+const k7= function b7(){
     if (key == 1) {
 		document.getElementById("a7").value = "X";
 		document.getElementById("a7").disabled = true;
@@ -113,7 +113,7 @@ function b7(){
 		key = 1;
 	}
 }
-function b8(){
+const k8=function b8(){
     if (key == 1) {
 		document.getElementById("a8").value = "X";
 		document.getElementById("a8").disabled = true;
@@ -129,7 +129,7 @@ function b8(){
 		key = 1;
 	}
 }
-function b9(){
+const k9=function b9(){
     if (key == 1) {
 		document.getElementById("a9").value = "X";
 		document.getElementById("a9").disabled = true;
@@ -336,16 +336,13 @@ function player_2(){
 
 function Reset() {
 	location.reload();
-	document.getElementById('b1').value = '';
-	document.getElementById("b2").value = '';
-	document.getElementById("b3").value = '';
-	document.getElementById("b4").value = '';
-	document.getElementById("b5").value = '';
-	document.getElementById("b6").value = '';
-	document.getElementById("b7").value = '';
-	document.getElementById("b8").value = '';
-	document.getElementById("b9").value = '';
-
-
-
+	document.getElementById("a1").value = '';
+	document.getElementById("a2").value = '';
+	document.getElementById("a3").value = '';
+	document.getElementById("a4").value = '';
+	document.getElementById("a5").value = '';
+	document.getElementById("a6").value = '';
+	document.getElementById("a7").value = '';
+	document.getElementById("a8").value = '';
+	document.getElementById("a9").value = '';
 }
